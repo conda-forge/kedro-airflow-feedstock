@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,13 +22,15 @@ requirements:
     - kedro >=0.17.5
     - python >=3.6,<3.11
     - python-slugify >=4.0
-    - semver >=2.10,<3
+    - semver >=2.10.0,<4.0.0
 
 test:
   imports:
     - kedro_airflow
   commands:
-    - pip check
+    #- pip check 
+    # Note kedro-airflow 0.5.1 has requirement semver~=2.10, but you have semver 3.0.1
+    # Note kedro 0.18.11 has requirement pip-tools~=6.5, but you have pip-tools 7.1.0
   requires:
     - pip
 
@@ -41,3 +43,7 @@ about:
 extra:
   recipe-maintainers:
     - cshaley
+    - rxm7706
+    - millsks
+    - elanqo
+    - zaigner

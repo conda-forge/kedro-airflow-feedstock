@@ -1,11 +1,11 @@
-About kedro-airflow
-===================
+About kedro-airflow-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kedro-airflow-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/kedro-org/kedro-plugins/tree/main/kedro-airflow
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kedro-airflow-feedstock/blob/main/LICENSE.txt)
 
 Summary: Kedro-Airflow makes it easy to deploy Kedro projects to Airflow
 
@@ -144,4 +144,8 @@ Feedstock Maintainers
 =====================
 
 * [@cshaley](https://github.com/cshaley/)
+* [@elanqo](https://github.com/elanqo/)
+* [@millsks](https://github.com/millsks/)
+* [@rxm7706](https://github.com/rxm7706/)
+* [@zaigner](https://github.com/zaigner/)
 
