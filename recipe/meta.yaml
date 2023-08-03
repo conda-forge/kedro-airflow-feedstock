@@ -17,10 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.11
+    - setuptools >=61.2
+    - python >=3.7,<3.11
   run:
     - kedro >=0.17.5
-    - python >=3.6,<3.11
+    - python >=3.7,<3.11
     - python-slugify >=4.0
     - semver >=2.10.0,<4.0.0
 
