@@ -18,18 +18,18 @@ requirements:
   host:
     - pip
     - setuptools >=61.2
-    - python >=3.7,<3.11
+    - python >=3.8
   run:
     - kedro >=0.17.5
-    - python >=3.7,<3.11
+    - python >=3.8
     - python-slugify >=4.0
-    - semver >=2.10.0,<4.0.0
+    - semver >=2.10.0
 
 test:
   imports:
     - kedro_airflow
   commands:
-    #- pip check 
+    - pip check 
     # Note kedro-airflow 0.5.1 has requirement semver~=2.10, but you have semver 3.0.1
     # Note kedro 0.18.11 has requirement pip-tools~=6.5, but you have pip-tools 7.1.0
   requires:
