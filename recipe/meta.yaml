@@ -1,5 +1,5 @@
 {% set name = "kedro-airflow" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kedro-airflow-{{ version }}.tar.gz
-  sha256: 8effbbd7b5af8d5c3ad21201003bbcc01d1fa421889af6df92f4d04a7ae25e87
+  sha256: c99a1ec858051d9d4b20fa5969c5924b321f41a78413c380eb4ede1cf3abee46
 
 build:
   noarch: python
