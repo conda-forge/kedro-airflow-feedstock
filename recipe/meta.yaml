@@ -1,5 +1,5 @@
 {% set name = "kedro-airflow" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kedro-airflow-{{ version }}.tar.gz
-  sha256: c99a1ec858051d9d4b20fa5969c5924b321f41a78413c380eb4ede1cf3abee46
+  sha256: 1bb5d90d0fe70b5d862564a439076e442799c8f9db905951c01ded77d1b2a0c0
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ test:
   imports:
     - kedro_airflow
   commands:
-    - pip check 
+    - pip check
     # Note kedro-airflow 0.5.1 has requirement semver~=2.10, but you have semver 3.0.1
     # Note kedro 0.18.11 has requirement pip-tools~=6.5, but you have pip-tools 7.1.0
   requires:
