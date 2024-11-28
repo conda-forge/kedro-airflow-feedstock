@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - kedro >=0.19.0
-     - python-slugify >=4.0
+    - python-slugify >=4.0
     - semver >=2.10.0
 
 test:
